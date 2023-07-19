@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.con {
+    width: 100%;
+    min-width: 400px;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+section {
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-con {
+    width: 400px;
+    padding: 15px;
+    border-radius: 7.5px;
+    background-color: rgb(97, 97, 97);
+}
+
+.calc-display {
+    width: 100%;
+    height: 70px;
+    border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(2, 2, 2, 0.6);
+}
+
+.display-box {
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.equ,.answer {
+    font-family: arial;
+    font-size: 30px;
+    font-weight: normal;
+    width: max-content;
+    overflow: hidden;
+    color: white;
+}
+
+.equ {
+    font-size: 15px;
+    color: rgb(221, 221, 221);
+}
+
+.calc-board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 30px 20px;
+    border-radius: 7.5px;
+    background-color: rgba(2, 2, 2, 0.6);
+}
+
+.calc-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.calc-btn {
+    border: 1px solid transparent;
+    background-color: rgb(37, 37, 37);
+    padding: 10px 0;
+    width: 20%;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgb(255, 105, 105);
+    color: white;
+}
+
+
+.calc-btn[value='/'],
+.calc-btn[value='*'],
+.calc-btn[value='+'],
+.calc-btn[value='-'],
+.calc-btn[value='='] {
+    font-size: 16px;
+    line-height: 0;
+}
+
+.calc-btn[value='.'] {
+    font-size: 25px;
+    line-height: 0;
+}
